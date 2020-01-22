@@ -100,7 +100,11 @@ Funcion Opcion7 <- Para1 ( )
 			cont3<-cont3+1
 		FinSi
 	FinPara
-	Escribir "se repitieron" cont3 "Nombres"
+	si cont3>0 Entonces
+		Escribir 'se repitieron',cont3,'Nombres'
+	SiNo
+		Escribir "No se han repetido Nombres"
+	FinSi
 	
 Fin Funcion
 
@@ -199,10 +203,10 @@ Funcion Opcion3 <- Sianidado()
 	
 	
 	Si Genero=="f" o Genero=="F" Entonces
-		Escribir  Nombre " Por Favor Dirigirse al baño de Mujeres"
-		Escribir "Desea usar el baño o la ducha?"
+		Escribir  Nombre " Por Favor Dirigirse al baÃ±o de Mujeres"
+		Escribir "Desea usar el baÃ±o o la ducha?"
 		Leer Badu
-		Si Badu=="baño" entonces
+		Si Badu=="baÃ±o" entonces
 			Escribir "tiene que pagar 250"
 		SiNo
 			Si Badu=="ducha" Entonces
@@ -212,11 +216,11 @@ Funcion Opcion3 <- Sianidado()
 		FinSi
 	Fin Si
 	Si Genero=="m" o Genero=="M" Entonces
-		Escribir  Nombre " Por Favor Dirigirse al baño de Hombres"
-		Escribir "Desea usar el baño o la ducha?"
+		Escribir  Nombre " Por Favor Dirigirse al baÃ±o de Hombres"
+		Escribir "Desea usar el baÃ±o o la ducha?"
 		Leer Badu
 		
-		Si Badu=="baño" entonces
+		Si Badu=="baÃ±o" entonces
 			Escribir "tiene que pagar 500"
 		SiNo
 			Si Badu=="ducha" Entonces
@@ -244,11 +248,11 @@ Funcion Opcion2 <- CondicionalSI (  )
 	
 	
 	Si Genero=="f" o Genero=="F" Entonces
-		Escribir  Nombre " Por Favor Dirigirse al baño de Mujeres"
+		Escribir  Nombre " Por Favor Dirigirse al baÃ±o de Mujeres"
 	
 	Fin Si
 	Si Genero=="m" o Genero=="M" Entonces
-		Escribir  Nombre " Por Favor Dirigirse al baño de Hombres"
+		Escribir  Nombre " Por Favor Dirigirse al baÃ±o de Hombres"
 	
 	Fin Si
 	
